@@ -13,12 +13,21 @@
         }
       );
     in
-    {
+    rec {
       overlay = import ./default.nix;
       packages = forAllSystems (system: {
         inherit (nixpkgsFor.${system})
           getnative
           vapoursynthPlugins;
       });
+
+      # My hydra only has x86_64-linux builders, so only packages from that
+      # system are added as hydra jobs
+      hydraJobs = {
+        # Hydra is confused by recurseForDerivations attributes
+        x86_64-linux = nixpkgs.lib.filterAttrsRecursive
+          (k: v: k != "recurseForDerivations")
+          packages.x86_64-linux;
+      };
     };
 }
