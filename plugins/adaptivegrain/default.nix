@@ -10,7 +10,7 @@ rustPlatform.buildRustPackage rec {
     sha256 = "1sds08r7as23x7kgfa0w7sqkmzpc4xbccirxjwynybcm25ixpzb4";
   };
 
-  cargoSha256 = "1sfnqlvrclwmp5y59bs92jwl2pv44lvrqmlwxkws6120haiyh6ih";
+  cargoSha256 = "1fy2n6afn7hxkwxf8l6jdakqpq97rn5dqav1bagzm2n40m37ldfk";
 
   postInstall = ''
     mkdir $out/lib/vapoursynth
