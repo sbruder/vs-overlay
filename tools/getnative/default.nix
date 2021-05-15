@@ -15,13 +15,13 @@ let
 in
 buildPythonApplication rec {
   pname = "getnative";
-  version = "2.2.1";
+  version = "3.0.0";
 
   src = fetchFromGitHub {
     owner = "Infiziert90";
     repo = pname;
     rev = version;
-    sha256 = "17hz0dd5f13zv8v8mvc0fzslkki5z9c9a908gpmqb01qvmaw362p";
+    sha256 = "0jvvwyxlgarff2r5v2nvqmy2bw17anz4cid95gwbl3br4a2pmhzn";
   };
 
   # vapoursynth is not recognised during installation
