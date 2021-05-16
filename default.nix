@@ -43,6 +43,7 @@ in
     readmpls = super.callPackage ./plugins/readmpls { };
     remap = super.callPackage ./plugins/remap { };
     retinex = super.callPackage ./plugins/retinex { };
+    rgsf = super.callPackage ./plugins/rgsf { };
     sangnom = super.callPackage ./plugins/sangnom { };
     scxvid = super.callPackage ./plugins/scxvid { };
     tcanny = super.callPackage ./plugins/tcanny { };
