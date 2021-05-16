@@ -40,6 +40,7 @@ in
     retinex = super.callPackage ./plugins/retinex { };
     rgsf = super.callPackage ./plugins/rgsf { };
     sangnom = super.callPackage ./plugins/sangnom { };
+    scxvid = super.callPackage ./plugins/scxvid { };
     tcanny = super.callPackage ./plugins/tcanny { };
     tnlmeans = super.callPackage ./plugins/tnlmeans { };
     ttempsmooth = super.callPackage ./plugins/ttempsmooth { };
