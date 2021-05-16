@@ -24,10 +24,18 @@
       # My hydra only has x86_64-linux builders, so only packages from that
       # system are added as hydra jobs
       hydraJobs = {
-        # Hydra is confused by recurseForDerivations attributes
-        x86_64-linux = nixpkgs.lib.filterAttrsRecursive
-          (k: v: k != "recurseForDerivations")
-          packages.x86_64-linux;
+        x86_64-linux = let
+          pkgs = nixpkgsFor.x86_64-linux;
+          allPackages = nixpkgs.lib.filterAttrsRecursive
+            (k: v: k != "recurseForDerivations")
+            packages.x86_64-linux;
+
+          allPlugins = nixpkgs.lib.attrValues allPackages.vapoursynthPlugins;
+        in
+        allPackages // {
+          vapoursynthWithPlugins = pkgs.vapoursynth.withPlugins allPlugins;
+          vseditWithPlugins = pkgs.vapoursynth-editor.withPlugins allPlugins;
+        };
       };
     };
 }
