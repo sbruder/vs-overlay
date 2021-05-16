@@ -1,6 +1,6 @@
 {
   description = "vs-overlay";
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+  inputs.nixpkgs.url = "github:sbruder/nixpkgs/vapoursynth-improve-dependency-resolution";
   outputs = { self, nixpkgs }:
     let
       systems = [ "x86_64-linux" "aarch64-linux" "i686-linux" "x86_64-darwin" ];

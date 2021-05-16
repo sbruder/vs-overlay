@@ -2,16 +2,16 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1621073999,
-        "narHash": "sha256-Cp99YreSFedcWovxNmO8g8qFYltQQJPRLfuot6Z7iGE=",
-        "owner": "nixos",
+        "lastModified": 1621176951,
+        "narHash": "sha256-QGritHQEpu0sClYlB7xl/ETsWzQAh5EJS5p/DOCC28I=",
+        "owner": "sbruder",
         "repo": "nixpkgs",
-        "rev": "83d907fd760d9ee4f49b4b7e4b1c6682f137b573",
+        "rev": "9b3a2e66b141733fe7cb5372f64d30b66445cccd",
         "type": "github"
       },
       "original": {
-        "owner": "nixos",
-        "ref": "nixos-unstable",
+        "owner": "sbruder",
+        "ref": "vapoursynth-improve-dependency-resolution",
         "repo": "nixpkgs",
         "type": "github"
       }
