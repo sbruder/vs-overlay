@@ -38,6 +38,7 @@ in
     nnedi3cl = super.callPackage ./plugins/nnedi3cl { };
     placebo = super.callPackage ./plugins/placebo { };
     retinex = super.callPackage ./plugins/retinex { };
+    rgsf = super.callPackage ./plugins/rgsf { };
     sangnom = super.callPackage ./plugins/sangnom { };
     tcanny = super.callPackage ./plugins/tcanny { };
     tnlmeans = super.callPackage ./plugins/tnlmeans { };
