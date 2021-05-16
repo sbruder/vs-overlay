@@ -62,6 +62,7 @@ in
     kagefunc = callPythonPackage ./plugins/kagefunc { };
     muvsfunc = callPythonPackage ./plugins/muvsfunc { };
     mvsfunc = callPythonPackage ./plugins/mvsfunc { };
+    vardefunc = callPythonPackage ./plugins/vardefunc { };
   };
 
   getnative = callPythonPackage ./tools/getnative { };
