@@ -74,4 +74,6 @@ in
   };
 
   getnative = callPythonPackage ./tools/getnative { };
+
+  vapoursynth-editor-sandsmark = super.libsForQt5.callPackage ./tools/vapoursynth-editor-sandsmark { };
 }

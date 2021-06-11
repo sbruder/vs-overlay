@@ -18,6 +18,7 @@
       packages = forAllSystems (system: {
         inherit (nixpkgsFor.${system})
           getnative
+          vapoursynth-editor-sandsmark
           vapoursynthPlugins;
       });
     };
